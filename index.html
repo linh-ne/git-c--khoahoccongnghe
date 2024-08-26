@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="header-left">
+      <h1>Website Title</h1>
+    </div>
+    <div class="header-right">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content-left">
+      <h2>HTML Elements</h2>
+      <button class="button" draggable="true" ondragstart="drag(event)" data-html="Thẻ P">Thẻ P</button>
+      <button class="button" draggable="true" ondragstart="drag(event)" data-html="Thẻ H1">Thẻ H1</button>
+    </div>
+    <div class="content-right">
+      <h2>Kéo khối vào đây</h2>
+      <div class="drag-in" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <button class="run-button" onclick="run()">Run</button>
+      <div class="result">
+        <h2>Kết quả:</h2>
+        <div class="result-content"></div>
+    </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024-715105133</p>
+  </div>
+</div>
+</body>
+<script src="index.js"></script>
+
+</html>
